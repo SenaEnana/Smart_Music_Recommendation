@@ -8,6 +8,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
+### 🌐 [Live Demo — Try the App Here](https://smart-music-recommendation.vercel.app/)
+
 Smart Music Recommendation Engine computes track similarity using multi-dimensional song metadata—including **genres, moods, thematic tags, explicit flags, and artist attributes**—delivering instant algorithmic matches through a responsive, master-detail web dashboard.
 
 > 📸 **[Insert Screenshot or GIF of the Master-Detail Dashboard Here]**  
