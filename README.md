@@ -15,3 +15,18 @@ Smart Music Recommendation Engine computes track similarity using multi-dimensio
 
 ---
 
+## 🏗️ System Architecture & How It Works
+
+Instead of relying on heavy collaborative filtering matrices that suffer from the cold-start problem, this engine uses **content-based metadata scoring**:
+
+```text
+┌──────────────────────┐      REST / JSON       ┌──────────────────────────┐
+│   React + TS Client  │ ◄────────────────────► │     FastAPI Backend      │
+│  (Master-Detail UI)  │                        │  (Pydantic Validation)   │
+└──────────────────────┘                        └────────────┬─────────────┘
+                                                             │ SQL Queries
+                                                             ▼
+                                                ┌──────────────────────────┐
+                                                │     SQLite Database      │
+                                                │ (Indexed Track Metadata) │
+                                                └──────────────────────────┘
