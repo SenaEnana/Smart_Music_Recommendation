@@ -79,3 +79,28 @@ Frontend      React 18, Vite, TypeScript, Tailwind CSS v4, Lucide React
 
 ---
 
+## 📂 Repository Structure
+
+```Plaintext
+├── backend/
+│   ├── app/
+│   │   ├── routers/         # Modular API endpoints (songs, search, recommendations)
+│   │   ├── crud/            # Optimized SQLite query & scoring handlers
+│   │   ├── schemas/         # Pydantic v2 data validation models
+│   │   └── database.py      # Database connection & session management
+│   ├── main.py              # FastAPI app initialization & CORS setup
+│   └── seed_sample.py       # Script to generate sample demo tracks (SQLite)
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/      # Reusable UI modules (Header, SongTable, RecommendationList)
+│   │   ├── views/           # Master-detail page layouts (SongDiscoveryView)
+│   │   ├── services/        # Typed Fetch API client (api.ts)
+│   │   └── types.ts         # Shared TypeScript interfaces
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
