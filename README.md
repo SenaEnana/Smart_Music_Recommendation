@@ -45,3 +45,15 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
 ```"Note: Initial search/recommendation request may take ~15s while the free-tier backend wakes up."```
 
 ---
+
+## ✨ Key Engineering Highlights
+
+* ⚡ Asynchronous REST API: Built with FastAPI and Pydantic v2 for strict request/response schema validation, automatic OpenAPI/Swagger documentation, and configured CORS middleware.
+
+* 🎛️ Master-Detail Split Workspace: Sticky recommendation sidebar pairs seamlessly with a paginated master library (20 tracks/page) for rapid exploration without screen reloads.
+
+* 🔍 Debounced & Auto-Reset Search: Instant filtering by title or artist that automatically restores the default catalog view when the search query is cleared.
+
+* 🎨 Cyberpunk Dark UI: High-contrast Amber & Indigo theme crafted with Tailwind CSS v4 and Lucide icons for clean visual hierarchy.
+
+* 🔒 Public Demo Ready: Configured to run out-of-the-box with a sample seed dataset so reviewers can test the engine immediately without needing private data dumps.
