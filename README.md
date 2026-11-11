@@ -57,3 +57,9 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
 * 🎨 Cyberpunk Dark UI: High-contrast Amber & Indigo theme crafted with Tailwind CSS v4 and Lucide icons for clean visual hierarchy.
 
 * 🔒 Public Demo Ready: Configured to run out-of-the-box with a sample seed dataset so reviewers can test the engine immediately without needing private data dumps.
+
+---
+
+|ℹ️ Disclaimer: This project is strictly an algorithmic 
+| recommendation and metadata discovery showcase. It does not 
+| host, stream, or distribute copyrighted audio files.
