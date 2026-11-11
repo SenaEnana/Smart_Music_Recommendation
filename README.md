@@ -32,3 +32,16 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
                                                 │     PostgreSQL Database  │
                                                 │ (Indexed Track Metadata) │
                                                 └──────────────────────────┘
+```
+
+---
+
+1. Metadata Extraction & Indexing: Tracks are structured around normalized attributes (genre, mood, theme, artist, explicit).
+
+2. Weighted Similarity Scoring: Selecting a seed track triggers GET /recommendations/?song_id={id}, which evaluates candidate tracks across overlapping metadata dimensions and ranks results by similarity score.
+
+3. Zero-Reload Reactive UI: The frontend fetches ranked matches asynchronously and updates the sticky recommendation drawer without interrupting browsing or pagination state.
+
+```"Note: Initial search/recommendation request may take ~15s while the free-tier backend wakes up."```
+
+---
