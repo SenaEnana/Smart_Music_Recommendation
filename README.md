@@ -29,6 +29,6 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
                                                              │ SQL Queries
                                                              ▼
                                                 ┌──────────────────────────┐
-                                                │     SQLite Database      │
+                                                │     PostgreSQL Database  │
                                                 │ (Indexed Track Metadata) │
                                                 └──────────────────────────┘
