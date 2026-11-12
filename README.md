@@ -8,6 +8,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
+### 🌐 [Live Demo — Try the App Here](https://smart-music-recommendation.vercel.app/)
+
 Smart Music Recommendation Engine computes track similarity using multi-dimensional song metadata—including **genres, moods, thematic tags, explicit flags, and artist attributes**—delivering instant algorithmic matches through a responsive, master-detail web dashboard.
 
 > 📸 **[Insert Screenshot or GIF of the Master-Detail Dashboard Here]**  
@@ -27,6 +29,37 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
                                                              │ SQL Queries
                                                              ▼
                                                 ┌──────────────────────────┐
-                                                │     SQLite Database      │
+                                                │     PostgreSQL Database  │
                                                 │ (Indexed Track Metadata) │
                                                 └──────────────────────────┘
+```
+
+---
+
+1. Metadata Extraction & Indexing: Tracks are structured around normalized attributes (genre, mood, theme, artist, explicit).
+
+2. Weighted Similarity Scoring: Selecting a seed track triggers GET /recommendations/?song_id={id}, which evaluates candidate tracks across overlapping metadata dimensions and ranks results by similarity score.
+
+3. Zero-Reload Reactive UI: The frontend fetches ranked matches asynchronously and updates the sticky recommendation drawer without interrupting browsing or pagination state.
+
+```"Note: Initial search/recommendation request may take ~15s while the free-tier backend wakes up."```
+
+---
+
+## ✨ Key Engineering Highlights
+
+* ⚡ Asynchronous REST API: Built with FastAPI and Pydantic v2 for strict request/response schema validation, automatic OpenAPI/Swagger documentation, and configured CORS middleware.
+
+* 🎛️ Master-Detail Split Workspace: Sticky recommendation sidebar pairs seamlessly with a paginated master library (20 tracks/page) for rapid exploration without screen reloads.
+
+* 🔍 Debounced & Auto-Reset Search: Instant filtering by title or artist that automatically restores the default catalog view when the search query is cleared.
+
+* 🎨 Cyberpunk Dark UI: High-contrast Amber & Indigo theme crafted with Tailwind CSS v4 and Lucide icons for clean visual hierarchy.
+
+* 🔒 Public Demo Ready: Configured to run out-of-the-box with a sample seed dataset so reviewers can test the engine immediately without needing private data dumps.
+
+---
+
+|ℹ️ Disclaimer: This project is strictly an algorithmic 
+| recommendation and metadata discovery showcase. It does not 
+| host, stream, or distribute copyrighted audio files.
