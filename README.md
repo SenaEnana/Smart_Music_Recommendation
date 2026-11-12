@@ -60,7 +60,8 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
 
 ---
 
-```ℹ️ Disclaimer: This project is strictly an algorithmic 
+```
+ℹ️ Disclaimer: This project is strictly an algorithmic 
  recommendation and metadata discovery showcase. It does not 
  host, stream, or distribute copyrighted audio files.
 ```
