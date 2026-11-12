@@ -12,8 +12,8 @@
 
 Smart Music Recommendation Engine computes track similarity using multi-dimensional song metadata—including **genres, moods, thematic tags, explicit flags, and artist attributes**—delivering instant algorithmic matches through a responsive, master-detail web dashboard.
 
-> 📸 **[Insert Screenshot or GIF of the Master-Detail Dashboard Here]**  
-> *(Tip: Add a `docs/preview.png` or `demo.gif` showing a selected song on the left and live similarity recommendations updating on the right.)*
+> 📸<img width="1133" height="1590" alt="smart-music-recommendation vercel app_" src="https://github.com/user-attachments/assets/00dc17b3-a5a9-4ca6-9f1e-f7703893615f" />  
+> 
 
 ---
 
