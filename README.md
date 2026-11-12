@@ -69,13 +69,11 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
 
 ## 🛠️ Tech Stack
 
-|| **Layer** ||        || **Technologies** ||
-
-|| Backend ||       || Python 3.10+, FastAPI, Uvicorn, Pydantic v2 ||
-
-Database      PostgreSQL(Relational schema with sample seed script)
-
-Frontend      React 18, Vite, TypeScript, Tailwind CSS v4, Lucide React
+| **Layer** | **Technologies** |
+| --- | --- |
+| Backend | Python 3.10+, FastAPI, Uvicorn, Pydantic v2 |
+| Database | PostgreSQL(Relational schema with sample seed script) |
+| Frontend | React 18, Vite, TypeScript, Tailwind CSS v4, Lucide React |
 
 ---
 
