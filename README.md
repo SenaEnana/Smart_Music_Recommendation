@@ -69,9 +69,9 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
 
 ## 🛠️ Tech Stack
 
-**Layer**         **Technologies**
+|| **Layer** ||        || **Technologies** ||
 
-Backend       Python 3.10+, FastAPI, Uvicorn, Pydantic v2
+|| Backend ||       || Python 3.10+, FastAPI, Uvicorn, Pydantic v2 ||
 
 Database      PostgreSQL(Relational schema with sample seed script)
 
