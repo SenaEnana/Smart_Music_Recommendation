@@ -65,3 +65,61 @@ Instead of relying on heavy collaborative filtering matrices that suffer from th
  recommendation and metadata discovery showcase. It does not 
  host, stream, or distribute copyrighted audio files.
 ```
+---
+
+## 🛠️ Tech Stack
+
+**Layer**         **Technologies**
+
+Backend       Python 3.10+, FastAPI, Uvicorn, Pydantic v2
+
+Database      PostgreSQL(Relational schema with sample seed script)
+
+Frontend      React 18, Vite, TypeScript, Tailwind CSS v4, Lucide React
+
+---
+
+## 📂 Repository Structure
+
+```Plaintext
+├── backend/
+│   ├── app/
+│   │   ├── routers/         # Modular API endpoints (songs, search, recommendations)
+│   │   ├── crud/            # Optimized SQLite query & scoring handlers
+│   │   ├── schemas/         # Pydantic v2 data validation models
+│   │   └── database.py      # Database connection & session management
+│   ├── main.py              # FastAPI app initialization & CORS setup
+│   └── seed_sample.py       # Script to generate sample demo tracks (SQLite)
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/      # Reusable UI modules (Header, SongTable, RecommendationList)
+│   │   ├── views/           # Master-detail page layouts (SongDiscoveryView)
+│   │   ├── services/        # Typed Fetch API client (api.ts)
+│   │   └── types.ts         # Shared TypeScript interfaces
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## 🗺️ Roadmap & Future Improvements
+
+* [ ] Add audio feature vector support (BPM, key, energy) alongside categorical metadata
+
+* [ ] Dockerize frontend and backend with docker-compose for one-command deployment
+
+* [ ] Add unit tests with pytest for similarity scoring edge cases
+
+---
+
+## 📝 License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+---
+
+## Author
+
+Sena Adane
