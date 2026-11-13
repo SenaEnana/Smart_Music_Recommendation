@@ -104,3 +104,12 @@ Frontend      React 18, Vite, TypeScript, Tailwind CSS v4, Lucide React
 
 ---
 
+## 🗺️ Roadmap & Future Improvements
+
+* [ ] Add audio feature vector support (BPM, key, energy) alongside categorical metadata
+
+* [ ] Dockerize frontend and backend with docker-compose for one-command deployment
+
+* [ ] Add unit tests with pytest for similarity scoring edge cases
+
+---
