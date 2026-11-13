@@ -117,3 +117,9 @@ Frontend      React 18, Vite, TypeScript, Tailwind CSS v4, Lucide React
 ## 📝 License
 
 Distributed under the MIT License. See LICENSE for more information.
+
+---
+
+## Author
+
+Sena Adane
