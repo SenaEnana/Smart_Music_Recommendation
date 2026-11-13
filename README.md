@@ -113,3 +113,7 @@ Frontend      React 18, Vite, TypeScript, Tailwind CSS v4, Lucide React
 * [ ] Add unit tests with pytest for similarity scoring edge cases
 
 ---
+
+## 📝 License
+
+Distributed under the MIT License. See LICENSE for more information.
